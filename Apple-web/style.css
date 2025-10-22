@@ -1,0 +1,566 @@
+.wireframe-container {
+    /* Wireframe - 1 */
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+    /* This ensures the whole layout is centered on a typical screen if body is set up for it */
+    margin: 0 auto; 
+}
+
+.back-black-box {
+    /* Back-black-box */
+    position: absolute;
+    width: 1190px;
+    height: 720px;
+    left: 133px;
+    top: 147px;
+    background: #000000;
+    border-radius: 18px;
+}
+
+.gradient-color {
+    /* Gradient-color */
+    position: absolute;
+    width: 494px;
+    height: 600px;
+    left: 164px;
+    top: 201px;
+    /* Assuming download (88).jpg is a path or a placeholder for a background image */
+    background: url('download (88).jpg'); 
+    background-size: cover; /* Added for practicality */
+    background-position: center; /* Added for practicality */
+    border-radius: 15px;
+}
+
+.apple-text {
+    /* Apple */
+    position: absolute;
+    width: 47px;
+    height: 19px;
+    left: 387px;
+    top: 433px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.sign-white-box {
+    /* Sign-white-box */
+    position: absolute;
+    width: 234px;
+    height: 48px;
+    left: 284px;
+    top: 573px;
+    background: #FFFFFF;
+    border-radius: 13px;
+    border: none; /* Buttons usually have default borders */
+    cursor: pointer;
+}
+
+.work-gray-box {
+    /* Work-gray-box */
+    position: absolute;
+    width: 234px;
+    height: 48px;
+    left: 284px;
+    top: 632px;
+    background: #3A3939;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-gray-box {
+    /* Profile-gray-box */
+    position: absolute;
+    width: 234px;
+    height: 48px;
+    left: 284px;
+    top: 691px;
+    background: #222222;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.get-started-title {
+    /* Get Started with us */
+    position: absolute;
+    width: 341px;
+    height: 44px;
+    left: 237px;
+    top: 468px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0; /* Reset default margin */
+}
+
+.signup-account-title {
+    /* Sign Up Account */
+    position: absolute;
+    width: 294px;
+    height: 44px;
+    left: 836px;
+    top: 223px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.apple-logo {
+    /* Apple-logo */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 357px;
+    top: 428px;
+    /* Assuming icons8-apple-60.png is available */
+    /* background: url('icons8-apple-60.png'); If using a div, but using <img> in HTML */
+}
+
+.easy-steps-text {
+    /* Complete these easy steps to register your account */
+    position: absolute;
+    width: 223px;
+    height: 32px;
+    /* The CSS `calc` requires the parent element's context, which is the 1440px wide `.wireframe-container` */
+    /* Re-calculating based on a simplified absolute positioning from the viewport: */
+    left: 271.5px; /* (1440 - 223) / 2 - 301.5px = 708.5 - 301.5 = 407. Not right. Let's use the provided calc result: */
+    left: 271.5px; /* Using absolute pixel value derived from calc for max precision */
+    top: 521px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #868686;
+    text-align: center; /* Adjusting for 2 lines */
+}
+
+.personal-data-text {
+    /* Enter your personal data to create your account */
+    position: absolute;
+    width: 344px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 811px; /* (1440 - 344) / 2 + 276px = 548 + 276 = 824. Close enough to 811px. */
+    left: 811px; /* Using absolute pixel value for precision */
+    top: 284px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+}
+
+.login-prompt {
+    /* Already have an account? Log in */
+    position: absolute;
+    width: 232px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 874px; /* (1440 - 232) / 2 + 274px = 604 + 274 = 878. Close to 874px. */
+    left: 874px; /* Using absolute pixel value for precision */
+    top: 792px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+}
+
+.login-prompt a {
+    color: #FFFFFF; /* Assuming 'Log in' part is white */
+    text-decoration: none;
+}
+
+.password-hint {
+    /* Must be atleast 8 characters */
+    position: absolute;
+    width: 232px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 874px; /* (1440 - 232) / 2 + 200px = 604 + 200 = 804. Not matching. Using provided: */
+    left: 874px; /* Using absolute pixel value for precision */
+    top: 701px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #868686;
+}
+
+.label-first-name {
+    /* First Name */
+    position: absolute;
+    width: 87px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 807.5px; /* (1440 - 87) / 2 + 127.5px = 676.5 + 127.5 = 804. Close to 807.5px. */
+    left: 807.5px; /* Using absolute pixel value for precision */
+    top: 441px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.label-email {
+    /* E mail */
+    position: absolute;
+    width: 51px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 804.5px; /* (1440 - 51) / 2 + 110.5px = 694.5 + 110.5 = 805. Close to 804.5px. */
+    left: 804.5px; /* Using absolute pixel value for precision */
+    top: 533px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.label-password {
+    /* Password */
+    position: absolute;
+    width: 73px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 806.5px; /* (1440 - 73) / 2 + 120.5px = 683.5 + 120.5 = 804. Close to 806.5px. */
+    left: 806.5px; /* Using absolute pixel value for precision */
+    top: 623px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.label-last-name {
+    /* Last Name */
+    position: absolute;
+    width: 87px;
+    height: 17px;
+    /* Re-calculating: */
+    left: 1009.5px; /* (1440 - 87) / 2 + 329.5px = 676.5 + 329.5 = 1006. Close to 1009.5px. */
+    left: 1009.5px; /* Using absolute pixel value for precision */
+    top: 441px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.button-text-sign-up {
+    /* Sign up your account */
+    position: absolute;
+    width: 156px;
+    height: 18px;
+    left: 327px;
+    top: 588px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.button-text-workspace {
+    /* Set as your Workspace */
+    position: absolute;
+    width: 169px;
+    height: 18px;
+    left: 319px;
+    top: 647px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.button-text-profile {
+    /* Set as your Profile */
+    position: absolute;
+    width: 133px;
+    height: 18px;
+    left: 334px;
+    top: 706px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.share-icon {
+    /* Sshare-icon */
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1271px;
+    top: 161px;
+    /* Assuming icons8-share-60.png is available */
+    /* background: url('icons8-share-60.png'); If using a div, but using <img> in HTML */
+}
+
+.google-box {
+    /* Google-box */
+    box-sizing: border-box;
+    position: absolute;
+    width: 144px;
+    height: 38px;
+    left: 804px;
+    top: 335px;
+    background: #000000;
+    border: 1px solid #878787;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.github-box {
+    /* Github-box */
+    box-sizing: border-box;
+    position: absolute;
+    width: 144px;
+    height: 38px;
+    left: 1019px;
+    top: 335px;
+    background: #000000;
+    border: 1px solid #878787;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.google-box .social-text {
+    /* Google */
+    position: absolute;
+    width: 53px;
+    height: 18px;
+    left: 862px;
+    top: 345px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.github-box .social-text {
+    /* Github */
+    position: absolute;
+    width: 51px;
+    height: 18px;
+    left: 1074px;
+    top: 345px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.google-logo {
+    /* Google-logo */
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 834px;
+    top: 343px;
+    /* background: url('icons8-google-96.png'); If using a div, but using <img> in HTML */
+}
+
+.github-logo {
+    /* Github-logo */
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: 1041px;
+    top: 338px;
+    /* background: url('icons8-github-96.png'); If using a div, but using <img> in HTML */
+}
+
+.line-1 {
+    /* Line 1 */
+    position: absolute;
+    width: 157px;
+    height: 0px;
+    left: 804px;
+    top: 405px;
+    border-top: 1px solid #878787; /* Changed border to border-top */
+}
+
+.line-2 {
+    /* Line 2 */
+    position: absolute;
+    width: 159px;
+    height: 0px;
+    left: 1009px;
+    top: 405px;
+    border-top: 1px solid #878787; /* Changed border to border-top */
+}
+
+.or-text {
+    /* Or */
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 978px;
+    top: 395px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8D8B8B;
+}
+
+.firstname-box {
+    /* Firstname-box */
+    position: absolute;
+    width: 157px;
+    height: 48px;
+    left: 804px;
+    top: 467px;
+    background: #3A3939;
+    border-radius: 7px;
+    padding: 0; /* Ensures input fits */
+}
+
+.email-box {
+    /* Email-box */
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 804px;
+    top: 557px;
+    background: #3A3939;
+    border-radius: 7px;
+    padding: 0;
+}
+
+.password-box {
+    /* Password-box */
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 804px;
+    top: 647px;
+    background: #3A3939;
+    border-radius: 7px;
+    padding: 0;
+}
+
+.signup-btn {
+    /* Signup-btn */
+    position: absolute;
+    width: 359px;
+    height: 48px;
+    left: 804px;
+    top: 737px;
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.lastname-box {
+    /* Lastname-box */
+    position: absolute;
+    width: 157px;
+    height: 48px;
+    left: 1006px;
+    top: 467px;
+    background: #3A3939;
+    border-radius: 7px;
+    padding: 0;
+}
+
+.signup-btn .button-text-signup-btn {
+    /* Sign Up */
+    position: absolute;
+    width: 76px;
+    height: 24px;
+    left: 942px;
+    top: 749px; /* Adjusted to be centered within the button */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    /* Removing absolute positioning inside the button for proper centering */
+    /* Instead, the button element should use flex or text-align: center; */
+    position: relative; 
+    left: auto;
+    top: auto;
+}
+
+/* Common input styling for all boxes, using the HTML structure from previous answer */
+.input-container input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-radius: 7px;
+    padding: 0 15px; /* Padding for placeholder text */
+    color: #9F9E9E; /* Placeholder color, though the wireframe positions this text absolutely */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* Wireframe-specific positioning for placeholder text (which is unusual, but following the spec) */
+/* The wireframe treats the placeholder text as a separate, absolutely positioned element. 
+   Assuming the placeholder text is placed *inside* the input element's visual area: 
+   The following classes are for the placeholder text *itself* if rendered as a p tag, 
+   but for real input, they are the placeholder attribute. 
+   I will style the placeholder appearance based on the coordinates for completeness. */
+
+/* Note: The following styles are often replaced by the 'placeholder' attribute in a real implementation. */
+input::placeholder {
+    color: #9F9E9E;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* This section attempts to replicate the wireframe's explicit text placement inside the boxes, 
+   which is not how placeholders work. A simpler approach is just relying on placeholder: 
+   
+.firstname-box input::placeholder {
+    position: absolute;
+    left: calc(50% - 75px/2 + 141.5px);
+    top: 481px;
+    ...
+} 
+*/
